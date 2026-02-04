@@ -6,6 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { ThemeProvider } from "next-themes";
+import detailsJson from "./data/datas.json";
 import { ThemeToggle } from "./components/ThemeToggle";
 import "./globals.css";
 import { useState,useEffect } from "react";
@@ -67,10 +68,6 @@ export default function RootLayout({
     setMobileMenuOpen(false);
   };
 
-  const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/projects", label: "Project" }
-  ];
   return (
     <html lang="en">
       <head>
@@ -101,7 +98,7 @@ export default function RootLayout({
               
               <div className="flex items-center gap-4">
                 <div className="hidden md:flex items-center space-x-6">
-                  {navLinks.map((link) => (
+                  {detailsJson.navLinks.map((link) => (
                     <Link 
                       key={link.href}
                       href={link.href} 
@@ -141,7 +138,7 @@ export default function RootLayout({
                   className="md:hidden mt-4 border-t border-[var(--color-gray-200)] pt-4 overflow-hidden"
                 >
                   <div className="flex flex-col space-y-3">
-                    {navLinks.map((link) => (
+                    {detailsJson.navLinks.map((link) => (
                       <Link 
                         key={link.href}
                         href={link.href} 

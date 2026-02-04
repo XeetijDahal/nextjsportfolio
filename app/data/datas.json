@@ -1,0 +1,85 @@
+{
+    "navLinks": [
+        { "href": "/", "label": "Home" },
+        { "href": "/projects", "label": "Project" }
+    ],
+    "heroScreen": {
+        "firstInitial": "K",
+        "lastInitial": "D",
+        "fullName": "Kshitij Dahal",
+        "role": "Front End Developer",
+        "description": "This portfolio showcases my resume, skills, contact details, as well as the projects I have already created and those I am currently working on."
+    },
+    "aboutScreen": {
+        "title": "About Me",
+        "paragraphs": [
+            {
+                "type": "text",
+                "content": "I'm a full stack developer who enjoys building things that actually work. On the frontend, I work with {{{React.js}}}, {{{Next.js}}}, and {{{Tailwind CSS}}} to create clean, responsive interfaces. For backend and mobile, I use {{{ASP.NET}}} along with {{{React Native}}} and {{{.NET MAUI}}} to build cross-platform apps that feel native on any device."
+            },
+            {
+                "type": "text",
+                "content": "I recently completed a {{one-year internship}} where I spent every day working with React.js, React Native, and .NET MAUI on real projects. It taught me a lot about writing code that other people can read and maintain, fixing bugs under pressure, and working with a team to ship features on time."
+            },
+            {
+                "type": "text",
+                "content": "I also spent {{six months}} learning about DeFi and blockchain development. It was a completely different world from traditional web development, but it helped me understand how decentralized systems work and gave me some interesting perspective on building secure, transparent applications."
+            },
+            {
+                "type": "quote",
+                "content": "I like solving problems and figuring out how to make things better. Whether it's improving load times, fixing a tricky UI issue, or learning something new to get the job done, I'm always ready to dive in and figure it out."
+            }
+        ]
+    },
+    "educationScreen":{
+        "title":"Education",
+        "schools":[
+            {
+                "name":"Chitkara University H.P.",
+                "level":"Bachelors",
+                "description":"Gained comprehensive knowledge in software development, algorithms, and system design through coursework and practical projects.",
+                "location":"Himachal Pradesh",
+                "contact":"https://www.chitkarauniversity.edu.in/",
+                "imageUrl":"https://www.shoutlo.com/assets/images/merchant_images/merchant-141135-5d6e273fb81f3.jpg"
+            },
+            {
+                "name":"M.E.S. Raja Residential School",
+                "level":"Higher Secondary",
+                "description":"Specialized in Science (PCM) with focus on advanced subject knowledge and preparation for higher education.",
+                "location":"Himachal Pradesh",
+                "contact":"https://www.mesrajaschool.com/",
+                "imageUrl":"https://lh3.googleusercontent.com/gps-cs-s/AHVAwerpoYzuL0vrWAeMQMZaP8GFxLY4OlrMyALUkYuOctm3EEgnJ8vr1EO9xMdcLmh8AilGBWu0dfhaD4L0JN1b9P_KLyAN4PyYo_ebfWfQdz-7Z8-ZPe36ar2ppCzd3e1RQ5b0kCscKg=s1360-w1360-h1020-rw"
+            },
+            {
+                "name":"Saptakoshi secondary english boarding school",
+                "level":"Secondary",
+                "description":"Building strong academic foundations and developing critical thinking abilities across core subjects.",
+                "location":"Biratnagar-8, Nepal",
+                "contact":"https://www.facebook.com/p/Saptakoshi-English-School-Biratnagar-8-100054529086288/",
+                "imageUrl":"https://scontent.fpkr1-1.fna.fbcdn.net/v/t39.30808-6/303038052_597465162081115_2726714957065887933_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=h0tLlfG3L6IQ7kNvwF7DjRq&_nc_oc=AdmKm7eOg_YznB1Hk8EYFF58ArvbYwRDYJy6QGnxvZqhgiTHBuf1veqZ0Cg9gCXBQqf3DUeZ4SGJv7sb7DZ5uhAT&_nc_zt=23&_nc_ht=scontent.fpkr1-1.fna&_nc_gid=zTT08sPLcW2bc28LpouCcw&oh=00_Aft1RgwARjT6mp0oqv20xzXdZGbh0VugWr6lJOF9dXiCtg&oe=69888FE8"
+            },
+            {
+                "name":"Namuna Vidya Mandir",
+                "level":"Primary",
+                "description":"Completed my early education from Nursery to Grade 2, developing fundamental skills in learning and communication.",
+                "location":"Biratnagar-8, Nepal",
+                "contact":"https://www.facebook.com/namunavidyamandir/",
+                "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZFaGe_h_3BftkGbyU6j2Vq0WW6kWdELzVXw&s"
+            }
+        ]
+    },
+    "skillsScreen": {
+        "title": "Skills",
+        "skills": ["HTML", "CSS", "JavaScript", "ReactJs", "NextJs", "Tailwind CSS", "ASP.NET", "React Native", ".NET MAUI","Python","Django","SQL","C#"]
+    },
+    "contactScreen": {
+        "title": "Let's Connect",
+        "description": "Feel free to reach out on any platform.",
+        "contacts": [
+        { "contactSource": "Facebook", "contactLink": "https://www.facebook.com/profile.php?id=61580860805778", "contactIcon": "Facebook", "brandColor": "#1877F2" },
+        { "contactSource": "Instagram", "contactLink": "https://www.instagram.com/xeetij__dahal/", "contactIcon": "Instagram", "brandColor": "#E4405F" },
+        { "contactSource": "Github", "contactLink": "https://github.com/XeetijDahal", "contactIcon": "Github", "brandColor": "#6e5494" },
+        { "contactSource": "LinkedIn", "contactLink": "https://linkedin.com/in/yourprofile", "contactIcon": "Linkedin", "brandColor": "#0A66C2" }
+        ]
+    }
+}
