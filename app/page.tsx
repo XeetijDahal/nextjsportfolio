@@ -60,7 +60,7 @@ export default function Home() {
   return (
     <div className="w-full flex flex-col" style={{ background: 'var(--background)' }}>
 
-      <div className="w-full min-h-screen flex flex-col items-center pt-24 md:pt-28 justify-center">
+      <div className="w-full min-h-screen flex flex-col items-center pt-24 md:pt-28 justify-center px-4">
         <div className="mb-10 relative">
           <div className="w-40 h-40 rounded-full flex items-center justify-center relative overflow-hidden"
                style={{ 
@@ -84,7 +84,7 @@ export default function Home() {
           </div>
         </div>
         
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-wide text-center uppercase"
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 tracking-wide text-center uppercase"
             style={{ 
               background: 'linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 100%)',
               WebkitBackgroundClip: 'text',
@@ -95,13 +95,13 @@ export default function Home() {
           {detailsJson.heroScreen.fullName}
         </h1>
         
-        <h2 className="text-3xl md:text-4xl font-medium mb-8 text-center tracking-wide"
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-8 text-center tracking-wide"
             style={{ color: 'var(--heading)' }}>
           {detailsJson.heroScreen.role}
         </h2>
         
-        <div className="max-w-2xl text-center">
-          <p className="text-lg md:text-xl leading-relaxed tracking-wide"
+        <div className="max-w-2xl text-center px-4">
+          <p className="text-base sm:text-lg md:text-xl leading-relaxed tracking-wide"
              style={{ color: 'var(--secondary)' }}>
             {detailsJson.heroScreen.description}
           </p>
@@ -115,10 +115,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full px-5 md:px-20 py-20" style={{ background: 'var(--muted)' }}>
+      <div className="w-full px-4 sm:px-6 md:px-20 py-20" style={{ background: 'var(--muted)' }}>
         <div className="max-w-4xl mx-auto">
           <h2 
-            className="text-3xl md:text-4xl font-bold mb-8 uppercase tracking-wider"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 uppercase tracking-wider text-center md:text-left"
             style={{ 
               background: 'linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 100%)',
               WebkitBackgroundClip: 'text',
@@ -130,14 +130,14 @@ export default function Home() {
           </h2>
           
           <div 
-            className="space-y-6 leading-relaxed text-base md:text-lg"
+            className="space-y-6 leading-relaxed text-sm sm:text-base md:text-lg"
             style={{ color: 'var(--secondary)' }}
           >
             {detailsJson.aboutScreen.paragraphs.map((paragraph, index) => (
               paragraph.type === "quote" ? (
                 <p 
                   key={index}
-                  className="italic border-l-4 pl-6 py-2"
+                  className="italic border-l-4 pl-4 sm:pl-6 py-2"
                   style={{ 
                     color: 'var(--primary)',
                     borderColor: 'var(--brand-primary)'
@@ -154,12 +154,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
 
-      <div className="w-full px-5 md:px-20 py-20" style={{ background: 'var(--background)' }}>
+      <div className="w-full px-4 sm:px-6 md:px-20 py-20" style={{ background: 'var(--background)' }}>
         <div className="max-w-5xl mx-auto">
           <h2 
-            className="text-3xl md:text-4xl font-bold mb-12 uppercase tracking-wider text-center"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-12 uppercase tracking-wider text-center"
             style={{ 
               background: 'linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 100%)',
               WebkitBackgroundClip: 'text',
@@ -182,7 +181,7 @@ export default function Home() {
                   boxShadow: '0 4px 20px rgba(0,0,0,0.1)'
                 }}
               >
-                <div className="relative h-32 overflow-hidden">
+                <div className="relative h-32 sm:h-40 overflow-hidden">
                   <div 
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                     style={{ 
@@ -211,9 +210,9 @@ export default function Home() {
                   </div>
                 </div>
                 
-                <div className="p-6 flex-1 flex flex-col">
+                <div className="p-4 sm:p-6 flex-1 flex flex-col">
                   <h3 
-                    className="text-xl font-bold mb-2"
+                    className="text-lg sm:text-xl font-bold mb-2"
                     style={{ color: 'var(--heading)' }}
                   >
                     <HighlightedText text={school.name} />
@@ -270,10 +269,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full px-5 md:px-20 py-20" style={{ background: 'var(--muted)' }}>
+      <div className="w-full px-4 sm:px-6 md:px-20 py-20" style={{ background: 'var(--muted)' }}>
         <div className="max-w-5xl mx-auto">
           <h2 
-            className="text-3xl md:text-4xl font-bold mb-12 uppercase tracking-wider text-center"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-12 uppercase tracking-wider text-center"
             style={{ 
               background: 'linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 100%)',
               WebkitBackgroundClip: 'text',
@@ -285,11 +284,11 @@ export default function Home() {
             Skills
           </h2>
           
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
             {detailsJson.skillsScreen.skills.map((skill, index) => (
               <div 
                 key={index}
-                className="group relative px-6 py-3 rounded-full transition-all duration-300 hover:scale-110"
+                className="group flex items-center justify-center px-4 py-3 rounded-full transition-all duration-300 hover:scale-105"
                 style={{ 
                   background: 'var(--background)',
                   border: '1px solid var(--subtle)',
@@ -297,7 +296,7 @@ export default function Home() {
                 }}
               >
                 <span 
-                  className="text-sm font-medium uppercase tracking-wider"
+                  className="text-xs sm:text-sm font-medium uppercase tracking-wider text-center"
                   style={{ color: 'var(--primary)' }}
                 >
                   {skill}
@@ -315,10 +314,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full px-5 md:px-20 py-20" style={{ background: 'var(--background)' }}>
+      <div className="w-full px-4 sm:px-6 md:px-20 py-20" style={{ background: 'var(--background)' }}>
         <div className="max-w-4xl mx-auto text-center">
           <h2 
-            className="text-3xl md:text-4xl font-bold mb-6 uppercase tracking-wider"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 uppercase tracking-wider"
             style={{ 
               background: 'linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 100%)',
               WebkitBackgroundClip: 'text',
@@ -331,20 +330,20 @@ export default function Home() {
           </h2>
           
           <p 
-            className="text-lg mb-12"
+            className="text-base sm:text-lg mb-12"
             style={{ color: 'var(--secondary)' }}
           >
             {detailsJson.contactScreen.description}
           </p>
           
-          <div className="flex flex-wrap justify-center gap-6">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
             {detailsJson.contactScreen.contacts.map((contact, index) => (
               <a
                 key={index}
                 href={contact.contactLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-3 px-6 py-4 rounded-xl transition-all duration-300 hover:scale-105"
+                className="group flex items-center gap-3 px-4 sm:px-6 py-4 rounded-xl transition-all duration-300 hover:scale-105"
                 style={{ 
                   background: 'linear-gradient(135deg, var(--muted) 0%, var(--subtle) 100%)',
                   border: '1px solid var(--subtle)',
@@ -361,7 +360,7 @@ export default function Home() {
                   <ContactIcon name={contact.contactIcon} color={contact.brandColor} />
                 </div>
                 
-                <div className="text-left">
+                <div className="text-left hidden sm:block">
                   <div 
                     className="text-sm font-medium uppercase tracking-wider"
                     style={{ color: 'var(--heading)' }}
