@@ -76,10 +76,11 @@
         "title": "Let's Connect",
         "description": "Feel free to reach out on any platform.",
         "contacts": [
-        { "contactSource": "Facebook", "contactLink": "https://www.facebook.com/profile.php?id=61580860805778", "contactIcon": "Facebook", "brandColor": "#1877F2" },
-        { "contactSource": "Instagram", "contactLink": "https://www.instagram.com/xeetij__dahal/", "contactIcon": "Instagram", "brandColor": "#E4405F" },
-        { "contactSource": "Github", "contactLink": "https://github.com/XeetijDahal", "contactIcon": "Github", "brandColor": "#6e5494" },
-        { "contactSource": "LinkedIn", "contactLink": "https://linkedin.com/in/yourprofile", "contactIcon": "Linkedin", "brandColor": "#0A66C2" }
+            { "contactSource": "Facebook", "contactLink": "https://www.facebook.com/profile.php?id=61580860805778", "contactIcon": "Facebook", "brandColor": "#1877F2" },
+            { "contactSource": "Instagram", "contactLink": "https://www.instagram.com/xeetij__dahal/", "contactIcon": "Instagram", "brandColor": "#E4405F" },
+            { "contactSource": "Github", "contactLink": "https://github.com/XeetijDahal", "contactIcon": "Github", "brandColor": "#6e5494" },
+            { "contactSource": "LinkedIn", "contactLink": "https://linkedin.com/in/yourprofile", "contactIcon": "Linkedin", "brandColor": "#0A66C2" },
+            { "contactSource": "Youtube", "contactLink": "https://linkedin.com/in/yourprofile", "contactIcon": "Youtube", "brandColor": "#FF0000" }
         ]
     }
 }

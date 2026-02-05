@@ -1,6 +1,6 @@
 "use client";
 import detailsJson from "./data/datas.json";
-import { Facebook, Instagram, Github, Linkedin, Twitter, Mail, Globe, ExternalLink } from 'lucide-react';
+import { Facebook, Instagram, Github, Linkedin, Twitter, Mail, Globe, ExternalLink,Youtube } from 'lucide-react';
 
 const ContactIcon = ({ name, color }: { name: string; color: string }) => {
   const icons: Record<string, React.ComponentType<{ className?: string; style?: React.CSSProperties }>> = {
@@ -9,6 +9,7 @@ const ContactIcon = ({ name, color }: { name: string; color: string }) => {
     Github,
     Linkedin,
     Twitter,
+    Youtube,
     Mail,
     Globe
   };
@@ -59,7 +60,7 @@ export default function Home() {
   return (
     <div className="w-full flex flex-col" style={{ background: 'var(--background)' }}>
 
-      <div className="w-full min-h-screen flex flex-col items-center justify-center">
+      <div className="w-full min-h-screen flex flex-col items-center pt-24 md:pt-28 justify-center">
         <div className="mb-10 relative">
           <div className="w-40 h-40 rounded-full flex items-center justify-center relative overflow-hidden"
                style={{ 

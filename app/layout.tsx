@@ -112,7 +112,7 @@ export default function RootLayout({
                 
                 <button
                   onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                  className="md:hidden p-2 rounded-lg bg-[var(--color-gray-100)] text-[var(--foreground)]"
+                  className="md:hidden p-2 rounded-lg bg-[var(--muted)] text-[var(--foreground)]"
                   aria-label="Toggle menu"
                 >
                   {mobileMenuOpen ? (
@@ -135,7 +135,7 @@ export default function RootLayout({
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="md:hidden mt-4 border-t border-[var(--color-gray-200)] pt-4 overflow-hidden"
+                  className="md:hidden mt-4 border-t border-[var(--muted)] pt-4 overflow-hidden"
                 >
                   <div className="flex flex-col space-y-3">
                     {detailsJson.navLinks.map((link) => (
@@ -153,7 +153,7 @@ export default function RootLayout({
               )}
             </AnimatePresence>
           </motion.nav>}
-          <main className=" bg-[var(--background)]">
+          <main className="bg-[var(--background)]">
             {children}
           </main>
         </ThemeProviderWrapper>
