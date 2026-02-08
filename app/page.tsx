@@ -1,7 +1,8 @@
 "use client";
+import { useEffect } from "react";
 import detailsJson from "./data/datas.json";
 import { Facebook, Instagram, Github, Linkedin, Twitter, Mail, Globe, ExternalLink,Youtube } from 'lucide-react';
-
+import { useSearchParams } from 'next/navigation';
 const ContactIcon = ({ name, color }: { name: string; color: string }) => {
   const icons: Record<string, React.ComponentType<{ className?: string; style?: React.CSSProperties }>> = {
     Facebook,
@@ -17,6 +18,8 @@ const ContactIcon = ({ name, color }: { name: string; color: string }) => {
   const Icon = icons[name] || Globe;
   return <Icon className="w-6 h-6" style={{ color: color }} />;
 };
+
+
 
 const HighlightedText = ({ text }: { text: string }) => {
   const parts = text.split(/(\{\{\{.*?\}\}\}|\{\{.*?\}\})/g);
@@ -57,6 +60,16 @@ const HighlightedText = ({ text }: { text: string }) => {
 };
 
 export default function Home() {
+  const searchParams = useSearchParams();
+useEffect(() => {
+    const section = searchParams.get('section');
+    if (section === 'contact') {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [searchParams]);
   return (
     <div className="w-full flex flex-col" style={{ background: 'var(--background)' }}>
 
@@ -314,7 +327,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full px-4 sm:px-6 md:px-20 py-20" style={{ background: 'var(--background)' }}>
+      <div id="contact" className="w-full px-4 sm:px-6 md:px-20 py-20" style={{ background: 'var(--background)' }}>
         <div className="max-w-4xl mx-auto text-center">
           <h2 
             className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 uppercase tracking-wider"

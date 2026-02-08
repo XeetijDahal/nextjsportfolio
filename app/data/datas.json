@@ -1,6 +1,7 @@
 {
     "navLinks": [
         { "href": "/", "label": "Home" },
+        { "href": "/blogs", "label": "Blogs" },
         { "href": "/projects", "label": "Project" }
     ],
     "heroScreen": {
@@ -81,6 +82,45 @@
             { "contactSource": "Github", "contactLink": "https://github.com/XeetijDahal", "contactIcon": "Github", "brandColor": "#6e5494" },
             { "contactSource": "LinkedIn", "contactLink": "https://linkedin.com/in/yourprofile", "contactIcon": "Linkedin", "brandColor": "#0A66C2" },
             { "contactSource": "Youtube", "contactLink": "https://linkedin.com/in/yourprofile", "contactIcon": "Youtube", "brandColor": "#FF0000" }
+        ]
+    },
+    "blogScreen":{
+        "title":"My Blogs",
+        "blogs":[
+            {
+                "title": "JavaScript Fundamentals",
+                "description": "Variables, functions, ES6+ features, and async programming essentials.",
+                "imageUrl":"https://notes-of.notion.site/image/attachment%3A94697165-ee44-4a70-a385-ff5464be33b9%3Ajs_cover.png?table=block&id=2260dda3-7415-8096-ab08-e0e955404185&spaceId=073216db-22fb-436a-b900-83c8a192b031&width=2000&userId=&cache=v2",
+                "navigateLink":"https://notes-of.notion.site/JavaScript-2260dda374158096ab08e0e955404185?pvs=74",
+                "date":"2082/01/02",
+                "time":10
+            }
+        ]
+    },
+    "projectScreen":{
+        "title":"My Projects",
+        "description":"",
+        "projects":[
+            {
+                "projectname":"Calculator",
+                "description":"This is a basic calculator built using HTML, CSS, and JavaScript.",
+                "date":"24/03/2025",
+                "features":["Basic Arithmetic Operation","Responsive Design","Interactive UI","Real-time Calculation","Error Handling"],
+                "techused":["HTML","CSS","JavaScript"],
+                "githubLink":"https://github.com/XeetijDahal/Calculator",
+                "websiteLink":"https://xeetijdahal-calculator.netlify.app/",
+                "imageUrl":"https://github.com/XeetijDahal/stopwatch/raw/main/image/stopwatch.png"
+            },
+            {
+                "projectname":"Rock Paper Scissor Game",
+                "description":"A simple and fun Rock Paper Scissors game built with HTML, CSS, and JavaScript. Uses emojis instead of images, features sound effects, a 5-round match system, score tracking, and a replay option.",
+                "date":"18/05/2025",
+                "features":["Responsive Design","Interactive UI","Real-time Calculation","Error Handling"],
+                "techused":["HTML","CSS","JavaScript"],
+                "githubLink":"https://github.com/XeetijDahal/Calculator",
+                "websiteLink":"https://xeetijdahal-calculator.netlify.app/",
+                "imageUrl":"https://github.com/XeetijDahal/rock-paper-scissor/raw/main/images/rps.png"
+            }
         ]
     }
 }
