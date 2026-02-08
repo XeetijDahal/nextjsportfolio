@@ -1,6 +1,7 @@
 {
     "navLinks": [
         { "href": "/", "label": "Home" },
+        { "href": "/blogs", "label": "Blogs" },
         { "href": "/projects", "label": "Project" }
     ],
     "heroScreen": {
@@ -81,6 +82,42 @@
             { "contactSource": "Github", "contactLink": "https://github.com/XeetijDahal", "contactIcon": "Github", "brandColor": "#6e5494" },
             { "contactSource": "LinkedIn", "contactLink": "https://linkedin.com/in/yourprofile", "contactIcon": "Linkedin", "brandColor": "#0A66C2" },
             { "contactSource": "Youtube", "contactLink": "https://linkedin.com/in/yourprofile", "contactIcon": "Youtube", "brandColor": "#FF0000" }
+        ]
+    },
+    "blogScreen":{
+        "title":"My blogs",
+        "blogs":[
+            {
+                "imageUrl":"https://img.notionusercontent.com/s3/prod-files-secure%2F073216db-22fb-436a-b900-83c8a192b031%2F94697165-ee44-4a70-a385-ff5464be33b9%2Fjs_cover.png/size/w=2000?exp=1770641888&sig=sTPI-Npm9TQGk8KMkj6K2cplr4d8GMk5w-eNdKyLBo4&id=2260dda3-7415-8096-ab08-e0e955404185&table=block&userId=048dcfad-5b8b-4882-8988-fd7ac722de4a",
+                "title":"Javascript",
+                "description":"",
+                "navigateLink":"https://www.notion.so/notes-of/JavaScript-2260dda374158096ab08e0e955404185"
+            }
+        ]
+    },
+    "projectScreen":{
+        "title":"My Projects",
+        "projects":[
+            {
+                "projectname":"Rock Paper Scissor",
+                "imageUrl":"https://github.com/XeetijDahal/rock-paper-scissor/raw/main/images/rps.png",
+                "date":"2082/01/02",
+                "description":"A simple and fun Rock Paper Scissors game built with HTML, CSS, and JavaScript. Uses emojis instead of images, features sound effects, a 5-round match system, score tracking, and a replay option.",
+                "features":[""],
+                "techused":["HTML","CSS","JS"],
+                "githubLink":"",
+                "websiteLink":""
+            },
+            {
+                "projectname":"Calculator",
+                "imageUrl":"https://github.com/XeetijDahal/Calculator/blob/main/Screenshot%202026-02-08%20193516.png?raw=true",
+                "date":"2082/02/10",
+                "description":"This is a basic calculator built using HTML, CSS, and JavaScript.",
+                "features":["Basic Arithmetic Operation","Responsive Design","Interactive Ui","Real-time Calculation","Error Handling"],
+                "techused":["HTML","CSS","JS"],
+                "githubLink":"",
+                "websiteLink":""
+            }
         ]
     }
 }
